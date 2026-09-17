@@ -1,0 +1,162 @@
+.conteudo {
+    background-image: url();
+    background-size: cover;
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--fundos);
+
+    width: 35%;
+
+    border-radius: 30px;
+
+    padding: 50px 100px;
+
+    gap: 50px;
+}
+
+.login-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.login-cabecalho img {
+    margin-bottom: 15px;
+}
+
+.login-cabecalho h1 {
+    font-size: 1.5em;
+}
+
+.login-cabecalho p {
+    font-size: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo label {
+    color: var(--azul-escuro);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.campo input {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    padding: 0 20px;
+
+    font-size: 1em;
+
+    outline: none;
+}
+
+.campo input::placeholder {
+    color: #00000050;
+    font-style: italic;
+}
+
+.campo-senha {
+    position: relative;
+}
+
+.botao-olho {
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+    color: #00000050;
+}
+
+.botao-entrar {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 30px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    transition: transform o.2s;
+}
+
+.botao-entrar:hover {
+    cursor: pointer;
+    background-color: #344957;
+    transform: translateY(-3px);
+}
+
+.botao-google {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    transition: transform o.2s;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botao-google:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.botao-google img {
+    width: 30px;
+    height: 30px;
+}
