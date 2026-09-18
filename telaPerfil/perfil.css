@@ -1,1 +1,42 @@
-/* perfil csss */
+/* perfil */
+
+.campo-busca {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.campo-busca {
+    /* esse elemento pode ocupar o espaço disponível dentro do container flex. */
+    flex: 1;
+
+   
+
+    height: 50px;
+    padding: 0 20px;
+
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    background-color: var(--branco);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/*  */
+
+.campo-busca input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    font-family: inherit;
+    /* estamos dizendo para herdar a fonte do pai */
+    font-size: 1.3em;
+    color: var(--texto);
+}
