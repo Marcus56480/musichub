@@ -1,0 +1,56 @@
+body {
+    background-color: var(--verde-escuro);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.card {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+}
+
+.infos,
+.letras {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--branco);
+
+
+    margin: 40px;
+    padding: 20px;
+}
+
+.infos nav {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.letras {
+    display: flex;
+    flex-direction: column;
+    color: var(--branco);
+    margin: 40px;
+
+}
+
+.letras p {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.letra h2 {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 30px;
+}
