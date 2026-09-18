@@ -11,8 +11,8 @@
 .login {
     display: flex;
     flex-direction: column;
-
-    background-color: var(--fundos);
+    
+    background-color: #f1f1f1;
 
     width: 35%;
 
@@ -21,9 +21,11 @@
     padding: 50px 100px;
 
     gap: 50px;
+
+    
 }
 
-.login-cabecalho {
+.img-cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,15 +33,15 @@
     gap: 5px;
 }
 
-.login-cabecalho img {
+.img-cabecalho img {
     margin-bottom: 15px;
 }
 
-.login-cabecalho h1 {
+.img-cabecalho h1 {
     font-size: 1.5em;
 }
 
-.login-cabecalho p {
+.img-cabecalho p {
     font-size: 1em;
 }
 
@@ -57,7 +59,7 @@ form {
 }
 
 .campo label {
-    color: var(--azul-escuro);
+    color: var(--preto);
     font-size: 1em;
     font-weight: 700;
 }
@@ -111,7 +113,7 @@ form {
     border: none;
     border-radius: 10px;
 
-    background-color: var(--azul-escuro);
+    background-color: var(--verde-claro);
     color: var(--branco);
 
     font-size: 1.2em;
@@ -124,7 +126,7 @@ form {
 
 .botao-entrar:hover {
     cursor: pointer;
-    background-color: #344957;
+    background-color: var(--fundo-pagina);
     transform: translateY(-3px);
 }
 
@@ -159,4 +161,23 @@ form {
 .botao-google img {
     width: 30px;
     height: 30px;
+}
+
+.Apresentacao-login {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 35%;
+}
+
+.Apresentacao-login img {
+    width: 90%;
+    height: auto;
+}
+
+.img-cabecalho img {
+    width: 150px;
+    height: auto;
 }
