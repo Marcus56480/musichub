@@ -8,14 +8,16 @@ main {
 }
 
 .card {
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
-    padding: 20px;
-}
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.30);
 
-.infos,
-.letras {
+    padding: 20px;
+
+    border-radius: 20px;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.062);
 }
 
 .infos {
@@ -42,6 +44,8 @@ main {
     color: var(--branco);
     margin: 40px;
 
+    width: 550px;
+
 }
 
 .letras p {
@@ -53,4 +57,37 @@ main {
     font-weight: 600;
     font-size: 2em;
     margin-top: 30px;
+}
+
+.infos {
+    width: 450px;
+}
+
+.infos h2 {
+    padding-bottom: 10px;
+}
+
+.infos img {
+    padding-bottom: 10px;
+}
+
+.infos nav a{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    padding: 10px;
+}
+
+.infos nav h3 {
+    padding-left: 20px;
+}
+
+.botao {
+    border: none;
+    margin: 0 10px;
+
+    background-color: transparent;
+    cursor: pointer;
 }
