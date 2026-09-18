@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto: #07181D;
+    --verde-escuro: #102F1A;
+    --fundo-pagina: #18552C;
+    --verde-claro: #43A663;
+    --verde-agua: #58CF92;
+    --verde-acizentado: #A3BEAE;
+    --branco: #FFFFFF;
+    --texto: #000000;
+    --bordas: #aaaaaa4d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Baloo 2" sans-serif;
+    background-color: var(--branco);
+    color: var(--texto);
+}
