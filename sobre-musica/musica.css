@@ -15,7 +15,7 @@ main {
     border-radius: 20px;
 
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 
     background-color: rgba(255, 255, 255, 0.062);
 }
@@ -29,7 +29,7 @@ main {
     color: var(--branco);
 
 
-    margin: 40px;
+    margin: 4% 30%;
     padding: 20px;
 }
 
@@ -44,7 +44,7 @@ main {
     color: var(--branco);
     margin: 40px;
 
-    width: 550px;
+    width: 60%;
 
 }
 
@@ -71,7 +71,7 @@ main {
     padding-bottom: 10px;
 }
 
-.infos nav a{
+.infos nav a {
     display: flex;
     flex-direction: row;
 
@@ -90,4 +90,88 @@ main {
 
     background-color: transparent;
     cursor: pointer;
+}
+
+#titulo-fora {
+    color: var(--branco);
+
+    margin: 0 30%;
+    margin-bottom: -3%;
+}
+
+#titulo-fora p{
+    font-size: 2em;
+}
+
+.botao i {
+    color: var(--branco);
+}
+
+
+.player {
+    justify-content: space-between;
+
+    margin-top: 50px;
+    padding: 5px;
+
+    align-items: center;
+}
+
+.mini {
+    background-color: var(--preto);
+    border-radius: 10px;
+
+    padding: 10px;
+
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+}
+
+.mini img {
+    width: 15%;
+}
+
+.mini p {
+    font-size: 0.7em;
+    font-weight: 200;
+}
+
+/* #mini-infos {
+    position: relative;
+} */
+
+/* .mini {
+    position: absolute;
+
+    bottom: 5.8%;
+    left: 28%;
+} */
+
+.musica-info {
+    text-align: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#mini-infos {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.30);
+    border-radius: 20px;
+
+    display: flex;
+}
+
+.primeira-parte {
+    padding: 0 10px;
+}
+
+.segunda-parte {
+    padding: 0 10px;
+}
+
+.musica-info .botao {
+    display: flex;
+    justify-content: flex-end;
 }
