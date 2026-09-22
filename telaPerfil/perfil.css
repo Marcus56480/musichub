@@ -111,3 +111,23 @@
     background-position: left center, right center ;
     background-repeat: no-repeat;
 }
+
+/* Botao */
+.botao {
+    padding: 20px 50px;
+
+    border-radius: 10px;
+
+    background-color: var(--verde-escuro);
+    color: var(--verde-claro);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.botao:hover {
+    background-color: #2ab2ab;
+    color: var(--branco);
+}
