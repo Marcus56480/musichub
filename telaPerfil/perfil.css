@@ -104,3 +104,10 @@
     width: 250px;
    
 } */
+
+.conteudo-perfil{
+    background: url(/imgs/marcaAguaRotacao2.png), url(/imgs/marcadAguaRotacao1.png);
+    background-size: 500px;
+    background-position: left center, right center ;
+    background-repeat: no-repeat;
+}
