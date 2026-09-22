@@ -2,3 +2,158 @@
     margin: 0;
     padding: 0;
 }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "artista   ultimo   populares"
+        "artista   albuns   albuns";
+}
+
+body {
+    background-color: var(--preto);
+}
+
+/* PERFIL DO ARTISTA */
+.artista {
+    grid-area: artista;
+}
+
+.perfil {
+    margin-left: 15%;
+    margin-top: 5%;
+
+    overflow: hidden;
+}
+
+.perfil {
+    color: var(--branco);
+    font-size: 2em;
+}
+
+/* CONFIGURAÇÃO PADRÃO DE CARDS */
+.card {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.30);
+
+    border-radius: 20px;
+
+    background-color: rgba(255, 255, 255, 0.062);
+}
+
+/* ÚLTIMO LANÇAMENTO */
+.ultimo-lancamento {
+    height: 30%;
+    width: 86.3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+    margin-right: 20%;
+    margin-top: 30%;
+
+    grid-area: ultimo;
+}
+
+#card {
+    margin-bottom: 2%;
+}
+
+.ultimo-lancamento h2 {
+    color: var(--branco);
+}
+
+.capa-album .card {
+    text-align: center;
+
+    width: 50%;
+
+    text-align: center;
+    margin: 0 25%;
+
+}
+
+.capa-album img {
+    display: flex;
+    padding: 10px;
+}
+
+/* MÚSICAS POPULARES */
+.infos-musica {
+    color: var(--branco);
+
+    /* display: flex;
+    justify-content: space-between;*/
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+
+    margin-right: 20%;
+    margin-bottom: 4%;
+    padding: 1% 5%;
+
+    align-items: center;
+}
+
+#nome {
+    font-weight: 600;
+}
+
+.populares {
+    margin-right: 4%;
+    margin-top: 6.8%;
+
+    grid-area: populares;
+}
+
+.populares h2 {
+    color: var(--branco);
+}
+
+.infos-musica span {
+    text-transform: uppercase;
+}
+
+.infos-musica img {
+    margin-left: -30%;
+}
+
+.infos-musica p {
+    margin-right: 5%;
+}
+
+
+/* CARROSEL PRINCIPAIS ÁLBUNS */
+.principais-albuns, 
+.albuns {
+    min-width: 0;
+}
+
+.principais-albuns {
+    grid-area: albuns;
+}
+
+.principais-albuns h2 {
+    color: var(--branco);
+}
+
+.carrosel-pai {
+    display: flex;
+    gap: 4%;
+    overflow-x: auto;
+    width: 100%;
+    min-width: 0;
+    padding-bottom: 10px;
+}
+
+.carrosel-pai::-webkit-scrollbar {
+    height: 3px;
+    background-color: #ddd;
+}
+
+.carrosel-pai::-webkit-scrollbar-thumb {
+    background-color: #444;
+}
