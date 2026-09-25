@@ -1,74 +1,102 @@
-.cabecalho
-{
-display: flex;
-flex-direction: row;
-
-padding: 0 40px;
-background-color: var(--preto);
-}
-
-.cabecalho .navegacao 
-{
-    font-family: "baloo 2";
-    font-size: 1.4em;
-
-    padding: 25px 30px;
-
-    text-transform: uppercase;
-
-    
-}
-
-.cabecalho .navegacao a
-{
-    color: var(--branco);
-}
-
-.cabecalho img
-{
-    padding: 15px ;
-    padding-left: 755px;
-    
-}
-
-.cabecalho nav
-{
-    text-align: right;
-}
-
-.cabecalho button
-{
-    padding: 20px ;
-
-    
-
-    border-radius: 10px;
-    border: none;
-
+.cabecalho {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+    height: 80px;
+    padding: 12px 40px;
     background-color: var(--preto);
-    color: var(--branco);
-
-    font-size: 30px;
 }
 
-.cabecalho button:hover
-{
+.cabecalho .navegacao {
+    display: flex;
+    grid-column: 3;
+    justify-self: end;
+    align-items: center;
+    gap: 24px;
+    font-family: "baloo 2";
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.cabecalho .navegacao a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.cabecalho a:hover {
     color: var(--verde-agua);
 }
 
-body
-{
+.logo {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    width: 226px;
+    max-width: 100%;
+}
 
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cabecalho .botao-menu {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.botao-menu span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: currentColor
+}
+
+.cabecalho .botao-menu:hover {
+    color: var(--verde-agua);
+}
+
+.bemVindo {
+    padding: 180px 90px;
+}
+
+
+.bemVindo img{
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.bemVindo .texto {
+    padding: 0 25px;
+    font-family: "baloo 2";
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+body {
     background-image: url(../imgs/Banner.svg);
-    background-size: cover  ;
-}
-
-.imagemBanner
-{
-   
-}
-
-.imagemBanner img
-{
-    background-color: var(--fundo-pagina);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
 }
