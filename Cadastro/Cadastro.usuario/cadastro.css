@@ -20,25 +20,31 @@ body {
 
 /* ===== Layout principal ===== */
 .container {
-    display: flex;
-    width: 100%;
-    max-width: 1400px;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  max-width: 1200px;        /* 👈 limite real do layout */
+  min-height: 100vh;
+  margin: 0 auto;           /* 👈 centraliza na tela */
+  padding: 40px 24px;       /* 👈 respiro nas bordas */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== Cartão do formulário ===== */
 .form-card {
-    background: #ffffff;
-    border-radius: 50px;
-    padding: 70px 32px;
-    width: 100%;
-    max-width: 360px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 360px;         /* 👈 tamanho fixo do card */
+  flex-shrink: 0;           /* 👈 impede de encolher */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
+
 
 .logo-topo {
     text-align: center;
@@ -117,26 +123,32 @@ form button:active {
 
 /* ===== Lado direito ===== */
 .apresentacao {
-    color: #fff;
-    max-width: 480px;
-    text-align: left;
+  color: #fff;
+  max-width: 420px;         /* 👈 trava a largura do bloco */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .logo-lateral {
-    margin-left: -10px;
+  width: 300px;             /* 👈 tamanho fixo, igual ao protótipo */
+  margin: 0 0 40px 0;
 }
 
 .apresentacao h2 {
-    font-size: 80px;
-    font-weight: 700;
-    margin-bottom: 30px;
+  font-size: 36px;          /* 👈 tamanho controlado */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  white-space: nowrap;      /* 👈 impede quebra em 2 linhas (opcional) */
 }
 
 .apresentacao p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #d4f5e3;
-    max-width: 380px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d4f5e3;
+  max-width: 380px;
 }
 
 /* ===== Responsivo ===== */
