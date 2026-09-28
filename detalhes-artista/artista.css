@@ -15,6 +15,25 @@ body {
     background-color: var(--preto);
 }
 
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.sair {
+    border: none;
+    background-color: transparent;
+    color: var(--branco);
+    
+    font-size: 250%;
+
+    padding-left: 10%;
+    padding-top: 5%;
+
+    cursor: pointer;
+}
+
+
 /* PERFIL DO ARTISTA */
 .artista {
     grid-area: artista;
@@ -22,14 +41,13 @@ body {
 
 .perfil {
     margin-left: 15%;
-    margin-top: 5%;
 
     overflow: hidden;
 }
 
 .perfil {
     color: var(--branco);
-    font-size: 2em;
+    font-size: 3em;
 }
 
 /* CONFIGURAÇÃO PADRÃO DE CARDS */
@@ -150,7 +168,7 @@ body {
 }
 
 .carrosel-pai::-webkit-scrollbar {
-    height: 3px;
+    height: 5px;
     background-color: #ddd;
 }
 
