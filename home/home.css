@@ -22,6 +22,7 @@
 .cabecalho .navegacao a {
     color: var(--branco);
     text-decoration: none;
+        transition: 200ms;
 }
 
 .cabecalho a:hover {
@@ -62,6 +63,8 @@
     background: transparent;
     color: var(--branco);
     cursor: pointer;
+
+    transition: 250ms;
 }
 
 .botao-menu span {
@@ -86,7 +89,7 @@
 }
 
 
-.bemVindo img{
+.bemVindo img {
     width: 700px;
     max-width: 100%;
     height: auto;
@@ -99,14 +102,6 @@
     font-family: "baloo 2";
     font-size: 1.6em;
     font-weight: bold;
-}
-
-.apresentacaoSite {
-    min-height: 100vh;
-    background-image: url(../imgs/Fundo_home.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .botao {
@@ -123,6 +118,8 @@
     font-weight: bold;
 
     text-transform: uppercase;
+
+    transition: 350ms;
 }
 
 .botao a {
@@ -130,16 +127,76 @@
     text-decoration: none;
 }
 
-.botao:hover
-{
+.botao:hover {
     background-color: var(--verde-agua);
 }
-.botao a:hover
-{
+
+.botao a:hover {
     color: var(--preto);
+    
 }
 
-.posicaobotao{
+.posicaobotao {
     padding: 50px 260px;
+}
+
+.apresentacaoSite {
+    min-height: 100vh;
+    background-image: url(../imgs/Fundo_home.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.apresentacao
+{
+    padding: 100px 150px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.textoApresentacao
+{
+    font-family: 'baloo 2';
+    width: 800px;
+}
+
+.textoApresentacao h1
+{
+    font-size: 3.2em;
+    font-weight: 800;
+    text-align: center;
+    color: var(--branco);
+}
+
+.textoApresentacao p
+{
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 650;
+    color: var(--branco);
+}
+
+.rodape 
+{
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--branco);
+    background-color: #000;
+
+    
+  
+    font-family: 'Baloo 2';
+}
+
+.redes
+{
+    color: var(--verde-claro);
+    font-weight: 700;
 }
 
