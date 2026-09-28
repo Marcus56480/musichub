@@ -7,6 +7,11 @@ main {
     grid-template-columns: repeat(2, 1fr)
 }
 
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
 /* CONFIGURAÇÃO PADRÃO DOS CARDS */
 .card {
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.30);
@@ -20,6 +25,17 @@ main {
 
     background-color: rgba(255, 255, 255, 0.062);
 }
+
+/* BOTÃO DE VOLTAR PÁGINA */
+.sair {
+    font-size: 250%;
+
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+/* SEÇÃO DIREITA */
+
 
 /* CAPA DA FAIXA */
 .infos {
@@ -97,7 +113,7 @@ main {
     margin-bottom: -3%;
 }
 
-#titulo-fora p{
+#titulo-fora p {
     font-size: 2em;
 }
 
