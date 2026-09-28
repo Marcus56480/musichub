@@ -1,0 +1,138 @@
+/* Card Perfil */
+.cabecalho-perfil{
+    padding:20px;
+    margin: 16px;
+    
+}
+/* perfil */
+.card- {
+    /* APLICA O FILTRO */
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.3);
+
+    border-radius:  30px;
+    border-style: ridge;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 70%;
+    width: 50%;
+
+    box-shadow: 
+    /* inset -> sombra interna */
+        inset 0px 20px 50px rgba(255, 255, 255, 0.5), 
+        /* sombra externa */
+        0 4px 4px rgba(0, 0, 0, 0.25); 
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* campo-busca */
+
+.campo-busca {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-color: var(--verde-acizenta); */
+}
+
+.campo-busca {
+    /* esse elemento pode ocupar o espaço disponível dentro do container flex. */
+    flex: 1;
+
+    height: 100%;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+
+    border: 1px solid #CCCCCC;
+    border-width: 2px;
+    border-color: #CCCCCC;
+    border-radius: 10px;
+    border-style: groove;
+    background-color: var(--branco);
+
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/* busca */
+
+.area-busca{
+    width: 70%;
+    display: flex;
+    align-items:center;
+    padding-bottom: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    flex-direction: column;
+    background: url(/imgs/marcadAguaPerfil.png) no-repeat center;
+    background-size: 50% 50%;
+    
+}
+.area-busca h2{
+    text-align: center;
+    padding-bottom: 2%;
+}
+.campo-busca input {
+    flex: 1;
+    height: 38px;
+    width: 50%;
+
+    border-style: none;
+    outline: none;
+
+    
+    /* estamos dizendo para herdar a fonte do pai */
+    font-size:1.2em;
+    color: var(--texto);
+}
+.img-perfil{
+    width: 250px;
+}
+/* .img-perfilAgua{
+    width: 250px;
+   
+} */
+
+.conteudo-perfil{
+    background: url(/imgs/marcaAguaRotacao2.png), url(/imgs/marcadAguaRotacao1.png);
+    background-size: 500px;
+    background-position: left center, right center ;
+    background-repeat: no-repeat;
+}
+
+/* Botao */
+.btn{
+
+    background-position: center;
+}
+.botao {
+    padding: 5px 50px;
+
+    border-radius: 10px;
+
+    background-color: var(--botao-gradiente);
+    color: var(--branco);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.botao:hover {
+    background-color: var(--verde-claro);
+    color: var(--texto);
+}
+

@@ -16,6 +16,10 @@
     --branco: #FFFFFF;
     --texto: #000000;
     --bordas: #aaaaaa4d;
+    --gradiente: linear-gradient(180deg, rgba(24, 85, 44, 1) 49%, rgba(53, 187, 97, 1) 100%);
+    --menu-gradiente: #18552C;
+    --botao-gradiente: #43A663;
+    --btn-gradiente: linear-gradient(180deg, rgba(67, 166, 99, 1) 12%, rgba(88, 207, 146, 1) 100%);
 }
 
 html {
@@ -27,6 +31,7 @@ body {
     background-color: var(--branco);
     color: var(--texto);
 }
+
 /* Página */
 .pagina-perfil {
     display: grid;
@@ -37,8 +42,10 @@ body {
 
 
 /* menu-lateral */
-.menu-lateral{
-     background-color: var(--verde-claro);
+.menu-lateral {
+
+    background: var(--menu-gradiente);
+    background: var(--gradiente);
 
     height: 100vh;
 
@@ -50,16 +57,36 @@ body {
     padding: 30px 50px;
 }
 
+.menu-lateral a {
+    color: var(--branco);
 
 
+}
+
+.menu-lateral a:hover {
+    color: var(--cor-destaque);
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--verde-claro);
 
 
+}
 
 /* menu-navegação */
 .menu-navegacao {
+
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.menu-navegacao a {
+    color: var(--branco);
+}
+
+.menu-navegacao img {
+    width: 78%;
+    margin-top: -50%;
 }
 
 .item-menu {
@@ -76,13 +103,25 @@ body {
 .item-menu i {
     width: 30px;
     font-size: 1.5em;
-    
+
 }
 
 .item-menu:hover {
     color: var(--cor-destaque);
     padding-bottom: 10px;
     border-bottom: 4px solid var(--verde-claro);
+}
+
+/* Botão voltar */
+.botao-voltar {
+    color: var(--branco);
+}
+
+.botao-voltar:hover {
+    color: var(--cor-destaque);
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--verde-escuro);
+
 }
 
 
@@ -101,7 +140,3 @@ body {
 
     margin-top: auto;
 }
-
-
-
-

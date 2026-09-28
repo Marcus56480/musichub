@@ -5,7 +5,8 @@
     
 }
 /* perfil */
-.card- {
+
+.card{
     /* APLICA O FILTRO */
     backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, 0.3);
@@ -30,6 +31,7 @@
     flex-direction: column;
     
 }
+
 
 /* campo-busca */
 
@@ -61,6 +63,7 @@
     align-items: center;
     
 }
+
 
 /* busca */
 
@@ -133,4 +136,8 @@
 .botao:hover {
     background-color: var(--verde-claro);
     color: var(--texto);
+}
+.imagem{
+    display: flex;
+    justify-content: center;
 }
