@@ -1,259 +1,246 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Hub — Biblioteca</title>
-    <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="biblioteca.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="app">
-      <!-- ===== SIDEBAR ===== -->
-      <aside class="sidebar">
-        <div class="sidebar-logo">
-          <img src="../imgs/IconeMusicHub 1.svg" alt="Music Hub" />
-        </div>
 
-        <nav class="sidebar-lib">
-          <span>Sua Biblioteca</span>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Music Hub — Sua biblioteca musical" />
+  <meta property="og:title" content="Music Hub" />
+  <meta property="og:image" content="../imgs/preview.jpg" />
+  <title>Music Hub — Biblioteca</title>
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="biblioteca.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="../imgs/favicon.ico" />
+</head>
 
-        <ul class="sidebar-avatares">
-          <li><img src="../imgs/imagens. biblioteca/Carrossel.Vertical.jpg" alt="" /></li>
-          <li><img src="../imgs/imagens. biblioteca/Carrossel.Vertical (2).jpg" alt="" /></li>
-          <li><img src="../imgs/imagens. biblioteca/Carrossel.Vertical (3).jpg" alt="" /></li>
-          <li><img src="../imgs/imagens. biblioteca/Carrossel.Vertical (4).jpg" alt="" /></li>
-          <li><img src="../imgs/imagens. biblioteca/Carrossel.Vertical (5).jpg" alt="" /></li>
-          <li><img src="../imgs/imagens. biblioteca/Carrossel.Vertical (6).jpg" alt="" /></li>
-          <li><img src="../imgs/imagens. biblioteca/Carrossel.Vertical(7).jpg" alt="" /></li>
-          <li><img src="../imgs/imagens. biblioteca/Carrossel.Vertical(8).jpg" alt="" /></li>
-        </ul>
-      </aside>
-
-      <!-- ===== CONTEÚDO PRINCIPAL ===== -->
-      <main class="conteudo">
-        <!-- Barra de pesquisa -->
-        <div class="topo">
-          <input
-            type="search"
-            class="busca"
-            placeholder="Pesquisar artistas, músicas, álbuns..."
-          />
-        </div>
-
-        <!-- Filtros -->
-        <nav class="filtros">
-          <button class="filtro ativo">PLAYLISTS</button>
-          <button class="filtro">DOWNLOADS</button>
-          <button class="filtro">PODCASTS</button>
-          <button class="filtro">MÚSICAS</button>
-          <button class="filtro">EPISÓDIOS</button>
-          <button class="filtro">ÁLBUNS</button>
-        </nav>
-
-        <!-- Seção: Tocadas recentemente -->
-        <section class="secao">
-          <header class="secao-header">
-            <h2>Tocadas recentemente</h2>
-            <a href="#">Ver tudo</a>
-          </header>
-          <div class="carrossel">
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel1.Chico-buarque.jpg"
-                alt="Chico Buarque"
-              />
-              <h3>Chico Buarque</h3>
-              <p>Playlist • Chico Buarque</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel1.Pra-sofrer-de-amor.jpg"
-                alt="Pra sofrer de amor"
-              />
-              <h3>Pra sofrer de amor</h3>
-              <p>Playlist • Pra sofrer de amor</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel1.Eu-sou-do-Brasil.jpg"
-                alt="Antigas"
-              />
-              <h3>Antigas</h3>
-              <p>Playlist • Sua biblioteca</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel1.Tim-maia.jpg"
-                alt="Tim maia"
-              />
-              <h3>Tim Maia</h3>
-              <p>Playlist • Tim Maia</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel1.Meu-trem-das-onzes.jpg"
-                alt="Meu Trem das 11"
-              />
-              <h3>Meu Trem das 11</h3>
-              <p>Playlist • Meu Trem das 11</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel1.Marisa-monte.jpg"
-                alt="Marisa Monte"
-              />
-              <h3>Marisa Monte</h3>
-              <p>Playlist • Marisa Monte</p>
-              <button class="play">▶</button>
-            </article>
-          </div>
-        </section>
-
-        <!-- Seção: Rotina -->
-        <section class="secao">
-          <header class="secao-header">
-            <h2>Rotina</h2>
-            <a href="#">Ver tudo</a>
-          </header>
-          <div class="carrossel">
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel2.Jazz-pra-alma.jpg"
-                alt="Jazz pra alma"
-              />
-              <h3>Jazz pra alma</h3>
-              <p>Playlist • Jazz pra alma</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel2.Academia.jpg"
-                alt="Academia"
-              />
-              <h3>Academia</h3>
-              <p>Playlist • Vários</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/carrossel2.Traabalha-e-trabalha.gif"
-                alt="Trabalha e trabalha"
-              />
-              <h3>Trabalha e trabalha</h3>
-              <p>Playlist • Trabalha e trabalha</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel2.Leitura.jpg"
-                alt="Leitura"
-              />
-              <h3>Leituras</h3>
-              <p>Playlist • Sua biblioteca</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img src="../imgs/imagens. biblioteca/Carrossel2.Pegar-trem-lotado.jpg" alt="Pegar trem lotado" />
-              <h3>Pegar trem lotado</h3>
-              <p>Playlist • Pegar trem lotado</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img src="../imgs/imagens. biblioteca/Carrossel2. Jogar-mine-com-os-cria.jpg" alt="Jogar mine com os crias" />
-              <h3>Jogar mine com os crias</h3>
-              <p>Playlist • Variados</p>
-              <button class="play">▶</button>
-            </article>
-          </div>
-        </section>
-
-        <!-- Seção: Não se esqueça delas -->
-        <section class="secao">
-          <header class="secao-header">
-            <h2>Não se esqueça delas</h2>
-            <a href="#">Ver tudo</a>
-          </header>
-          <div class="carrossel">
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel3.Rock-brasileiro.jpg"
-                alt="Rock Brasileiro"
-              />
-              <h3>Rock Brasileiro</h3>
-              <p>Playlist • Vários</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel3.Indie-Brasil.jpg"
-                alt="Indie Brasil"
-              />
-              <h3>Indie Brasil</h3>
-              <p>Playlist • Vários</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel3.Floyd-no-pink.jpg"
-                alt="Pink Floyd"
-              />
-              <h3>Pink Floyd</h3>
-              <p>Playlist • Variados</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel3.kendrick-lamar.jpg"
-                alt="Kendrick Lamar"
-              />
-              <h3>Kendrick Lamar</h3>
-              <p>Playlist • Vários</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img
-                src="../imgs/imagens. biblioteca/Carrossel3.Ritimos-de-jazz.jpg"
-                alt="Ritmos de Jazz"
-              />
-              <h3>Ritmos de Jazz</h3>
-              <p>Playlist • Vários</p>
-              <button class="play">▶</button>
-            </article>
-            <article class="card">
-              <img src="../imgs/imagens. biblioteca/Carrossel.Kanye-west.jpg" alt="Kanye West" />
-              <h3>Kanye West</h3>
-              <p>Playlist • Vários</p>
-              <button class="play">▶</button>
-            </article>
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <!-- ===== PLAYER FIXO ===== -->
-    <footer class="player">
-      <div class="player-info">
-        <img
-          src="../imgs/imagens. biblioteca/Carrossel.Vertical (3).jpg"
-          alt=""
-        />
-        <div>
-          <strong>Frank Ocean</strong>
-          <span>Tocando agora</span>
-        </div>
+<body>
+  <div class="app">
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="../imgs/IconeMusicHub 1.svg" alt="Music Hub" />
       </div>
 
+
+      <ul class="sidebar-avatares">
+        <li>
+          <img src="../imgs/imagens. biblioteca/Carrossel.Vertical.jpg" alt="Travis Scott" />
+          <span>Travis Scott</span>
+        </li>
+        <li>
+          <img src="../imgs/imagens. biblioteca/Carrossel.Vertical (2).jpg" alt="Joji" />
+          <span>Joji</span>
+        </li>
+        <li>
+          <img src="../imgs/imagens. biblioteca/Carrossel.Vertical (3).jpg" alt="Frank Ocean" />
+          <span>Frank Ocean</span>
+        </li>
+        <li>
+          <img src="../imgs/imagens. biblioteca/Carrossel.Vertical (4).jpg" alt="Charlie Brown" />
+          <span>Charlie Brown</span>
+        </li>
+        <li>
+          <img src="../imgs/imagens. biblioteca/Carrossel.Vertical (5).jpg" alt="Sabotage" />
+          <span>Sabotage</span>
+        </li>
+        <li>
+          <img src="../imgs/imagens. biblioteca/Carrossel.Vertical (6).jpg" alt="Tyler, the Creator" />
+          <span>Tyler, the Creator</span>
+        </li>
+        <li>
+          <img src="../imgs/imagens. biblioteca/Carrossel.Vertical(7).jpg" alt="Rita Lee" />
+          <span>Rita Lee</span>
+        </li>
+        <li>
+          <img src="../imgs/imagens. biblioteca/Carrossel.Vertical(8).jpg" alt="Lauryn Hill" />
+          <span>Lauryn Hill</span>
+        </li>
+        <!-- etc -->
+      </ul>
+    </aside>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main class="conteudo">
+      <!-- Barra de pesquisa -->
+      <div class="topo">
+        <input type="search" class="busca" placeholder="Pesquisar artistas, músicas, álbuns..." />
+      </div>
+
+      <div class="pagina-header">
+        <h1>Sua Biblioteca</h1>
+        <p>126 músicas • 18 episódios • 12 playlists salvas</p>
+      </div>
+
+      <!-- Filtros -->
+      <nav class="filtros">
+        <button class="filtro ativo">PLAYLISTS</button>
+        <button class="filtro">DOWNLOADS</button>
+        <button class="filtro">PODCASTS</button>
+        <button class="filtro">MÚSICAS</button>
+        <button class="filtro">EPISÓDIOS</button>
+        <button class="filtro">ÁLBUNS</button>
+      </nav>
+
+      <!-- Seção: Tocadas recentemente -->
+      <section class="secao">
+        <header class="secao-header">
+          <h2>Tocadas recentemente</h2>
+          <a href="#">Ver tudo</a>
+        </header>
+        <div class="carrossel">
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel1.Chico-buarque.jpg" alt="Chico Buarque" />
+            <h3>Chico Buarque</h3>
+            <p>Playlist • Chico Buarque</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel1.Pra-sofrer-de-amor.jpg" alt="Pra sofrer de amor" />
+            <h3>Pra sofrer de amor</h3>
+            <p>Playlist • Pra sofrer de amor</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel1.Eu-sou-do-Brasil.jpg" alt="Antigas" />
+            <h3>Antigas</h3>
+            <p>Playlist • Sua biblioteca</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel1.Tim-maia.jpg" alt="Tim maia" />
+            <h3>Tim Maia</h3>
+            <p>Playlist • Tim Maia</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel1.Meu-trem-das-onzes.jpg" alt="Meu Trem das 11" />
+            <h3>Meu Trem das 11</h3>
+            <p>Playlist • Meu Trem das 11</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel1.Marisa-monte.jpg" alt="Marisa Monte" />
+            <h3>Marisa Monte</h3>
+            <p>Playlist • Marisa Monte</p>
+            <button class="play">▶</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Seção: Rotina -->
+      <section class="secao">
+        <header class="secao-header">
+          <h2>Rotina</h2>
+          <a href="#">Ver tudo</a>
+        </header>
+        <div class="carrossel">
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel2.Jazz-pra-alma.jpg" alt="Jazz pra alma" />
+            <h3>Jazz pra alma</h3>
+            <p>Playlist • Jazz pra alma</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel2.Academia.jpg" alt="Academia" />
+            <h3>Academia</h3>
+            <p>Playlist • Vários</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/carrossel2.Traabalha-e-trabalha.gif" alt="Trabalha e trabalha" />
+            <h3>Trabalha e trabalha</h3>
+            <p>Playlist • Trabalha e trabalha</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel2.Leitura.jpg" alt="Leitura" />
+            <h3>Leituras</h3>
+            <p>Playlist • Sua biblioteca</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel2.Pegar-trem-lotado.jpg" alt="Pegar trem lotado" />
+            <h3>Pegar trem lotado</h3>
+            <p>Playlist • Pegar trem lotado</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel2. Jogar-mine-com-os-cria.jpg"
+              alt="Jogar mine com os crias" />
+            <h3>Jogar mine com os crias</h3>
+            <p>Playlist • Variados</p>
+            <button class="play">▶</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Seção: Não se esqueça delas -->
+      <section class="secao">
+        <header class="secao-header">
+          <h2>Não se esqueça delas</h2>
+          <a href="#">Ver tudo</a>
+        </header>
+        <div class="carrossel">
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel3.Rock-brasileiro.jpg" alt="Rock Brasileiro" />
+            <h3>Rock Brasileiro</h3>
+            <p>Playlist • Vários</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel3.Indie-Brasil.jpg" alt="Indie Brasil" />
+            <h3>Indie Brasil</h3>
+            <p>Playlist • Vários</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel3.Floyd-no-pink.jpg" alt="Pink Floyd" />
+            <h3>Pink Floyd</h3>
+            <p>Playlist • Variados</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel3.kendrick-lamar.jpg" alt="Kendrick Lamar" />
+            <h3>Kendrick Lamar</h3>
+            <p>Playlist • Vários</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel3.Ritimos-de-jazz.jpg" alt="Ritmos de Jazz" />
+            <h3>Ritmos de Jazz</h3>
+            <p>Playlist • Vários</p>
+            <button class="play">▶</button>
+          </article>
+          <article class="card">
+            <img src="../imgs/imagens. biblioteca/Carrossel.Kanye-west.jpg" alt="Kanye West" />
+            <h3>Kanye West</h3>
+            <p>Playlist • Vários</p>
+            <button class="play">▶</button>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ===== PLAYER FIXO ===== -->
+  <footer class="player">
+    <!-- Info à esquerda -->
+    <div class="player-info">
+      <img src="../imgs/imagens. biblioteca/Carrossel.Vertical (3).jpg" alt="" />
+      <div>
+        <strong>Frank Ocean</strong>
+        <span>Tocando agora</span>
+        <span class="tocando">
+          <span class="barra"></span>
+          <span class="barra"></span>
+          <span class="barra"></span>
+        </span>
+      </div>
+    </div>
+
+    <!-- Controles + progresso no centro -->
+    <div class="player-centro">
       <div class="player-controles">
         <button>⏮</button>
         <button class="play-principal">▶</button>
@@ -265,11 +252,14 @@
         <input type="range" min="0" max="100" value="0" />
         <span>0:00</span>
       </div>
+    </div>
 
-      <div class="player-volume">
-        <span>🔊</span>
-        <input type="range" min="0" max="100" value="80" />
-      </div>
-    </footer>
-  </body>
+    <!-- Volume à direita -->
+    <div class="player-volume">
+      <span>🔊</span>
+      <input type="range" min="0" max="100" value="80" />
+    </div>
+  </footer>
+</body>
+
 </html>
