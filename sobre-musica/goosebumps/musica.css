@@ -34,9 +34,6 @@ a {
     padding-top: 5%;
 }
 
-/* SEÇÃO DIREITA */
-
-
 /* CAPA DA FAIXA */
 .infos {
     display: flex;
@@ -51,7 +48,7 @@ a {
     padding: 20px;
 }
 
-/* PLATAFORMAS DISPONIVEIS */
+/* MAIS DO ARTISTA */
 .infos nav {
     display: grid;
     grid-template-columns: 1fr;
@@ -82,6 +79,13 @@ a {
     padding-left: 20px;
 }
 
+.nome-musica {
+    text-transform: uppercase;
+}
+
+.nome-musica span {
+    text-transform: lowercase;
+}
 
 /* LETRA MÚSICA */
 .letras {
