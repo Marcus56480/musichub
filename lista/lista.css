@@ -1,17 +1,17 @@
 /* Card Perfil */
-.cabecalho-perfil{
-    padding:20px;
+.cabecalho-perfil {
+    padding: 20px;
     margin: 16px;
-    
-}
-/* perfil */
 
-.card{
+}
+
+/* perfil */
+.card- {
     /* APLICA O FILTRO */
     backdrop-filter: blur(50px);
     background-color: rgba(255, 255, 255, 0.3);
 
-    border-radius:  30px;
+    border-radius: 30px;
     border-style: ridge;
     margin-top: auto;
     margin-bottom: auto;
@@ -21,24 +21,23 @@
     height: 70%;
     width: 50%;
 
-    box-shadow: 
-    /* inset -> sombra interna */
-        inset 0px 20px 50px rgba(255, 255, 255, 0.5), 
+    box-shadow:
+        /* inset -> sombra interna */
+        inset 0px 20px 50px rgba(255, 255, 255, 0.5),
         /* sombra externa */
-        0 4px 4px rgba(0, 0, 0, 0.25); 
+        0 4px 4px rgba(0, 0, 0, 0.25);
 
     display: flex;
     flex-direction: column;
-    
-}
 
+}
 
 /* campo-busca */
 
 .campo-busca {
     display: flex;
     align-items: center;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     /* background-color: var(--verde-acizenta); */
 }
 
@@ -47,7 +46,7 @@
     flex: 1;
 
     height: 100%;
-    width: 45%;
+    width: 35%;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
@@ -61,16 +60,15 @@
 
     display: flex;
     align-items: center;
-    
-}
 
+}
 
 /* busca */
 
-.area-busca{
+.area-busca {
     width: 70%;
     display: flex;
-    align-items:center;
+    align-items: center;
     padding-bottom: 5%;
     margin-top: auto;
     margin-bottom: auto;
@@ -80,12 +78,14 @@
     flex-direction: column;
     background: url(/imgs/marcadAguaPerfil.png) no-repeat center;
     background-size: 50% 50%;
-    
+
 }
-.area-busca h2{
+
+.area-busca h2 {
     text-align: center;
     padding-bottom: 2%;
 }
+
 .campo-busca input {
     flex: 1;
     height: 38px;
@@ -94,31 +94,34 @@
     border-style: none;
     outline: none;
 
-    
+
     /* estamos dizendo para herdar a fonte do pai */
-    font-size:1.2em;
+    font-size: 1.2em;
     color: var(--texto);
 }
-.img-perfil{
+
+.img-perfil {
     width: 250px;
 }
+
 /* .img-perfilAgua{
     width: 250px;
    
 } */
 
-.conteudo-perfil{
+.conteudo-perfil {
     background: url(/imgs/marcaAguaRotacao2.png), url(/imgs/marcadAguaRotacao1.png);
     background-size: 500px;
-    background-position: left center, right center ;
+    background-position: left center, right center;
     background-repeat: no-repeat;
 }
 
 /* Botao */
-.btn{
+.btn {
 
     background-position: center;
 }
+
 .botao {
     padding: 5px 50px;
 
@@ -137,7 +140,76 @@
     background-color: var(--verde-claro);
     color: var(--texto);
 }
-.imagem{
+
+.todas-lista {
+    display: grid;
+    gap: 30px;
+}
+
+.lista-ul {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lista1-ul {
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style-type: none;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.lista2-ul {
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style-type: none;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.lista3-ul {
+    padding: 5px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style-type: none;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.lista4-ul {
+    padding: 5px ;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    list-style-type: none;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.lista5{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content:center ;
+    border: solid #ccc;
+    border-radius: 10px;
 }
