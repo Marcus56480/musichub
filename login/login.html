@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicHub - Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="shortcut icon" href="../imgs/music_hub_icone.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <button class="botao-menu" id="menu" type="button" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <a class="logo" href="#" aria-label="MusicHub, página inicial">
+            <img src="../imgs/music_hub_escrita_verde 2.svg" alt="Logo MusicHub">
+        </a>
+
+        <nav class="navegacao">
+            <a href="#">Entrar</a>
+            <a href="#">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <article class="Apresentacao-login">
+            <img src="../imgs/music_hub_escrita.png" alt="MusicHub">
+            <h1>Acesse sua conta para utilizar todos os nossos recursos</h1>
+            <p>Para uma experiência mais completa conheça nossos planos pagos.</p>
+            <button class="premium"><img src="../imgs/Premium.svg">Seja Premium</button>
+        </article>
+        <section class="login">
+
+            <div class="img-cabecalho">
+                <img src="../imgs/music_hub_icone.png" alt="Logo MusicHub">
+            </div>
+            <div class="categorias-login">
+                <button class="ouvinte" id="ouvinte"><img src="../imgs/Fone.svg" alt="">Ouvinte</button>
+                <button class="artista" id="artista"><img src="../imgs/Microfone.svg" alt="">Artista</button>
+                <button class="administrador" id="administrador"><img src="../imgs/ADM.svg" alt="">Administrador</button>
+            </div>
+            <form class="campo-login">
+                <article class="caixas">
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="email@alunosenai.com">
+                </div>
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <div class="campo">
+                        <input type="password" id="senha" placeholder="********">
+                        <button type="button" id="mostrar-senha" class="botao-olho">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-eye-icon lucide-eye">
+                                
+                            </svg>
+                        </button>   
+                    </div>
+                </div>
+            </article>
+                        <div class="abaixo-senha">
+                        <div class="lembrar-senha"><input type="checkbox" id="lembrar-senha"><label for="lembrar-senha">Lembre de mim</label></div>
+                        <a href="#">Esqueceu sua senha?</a>
+                        </div>
+                <button type="submit" class="botao-entrar">Continuar</button>
+
+                <p class="ou">ou logue-se com</p>
+
+                <button class="botao-google">
+                    <img src="../imgs/flat-color-icons_google.svg" alt="Logo google">
+                    <span>Continuar com Google</span>
+                </button>
+
+            </form>
+        </section>
+    </main>
+    <script src="login.js"></script>
+</body>
+
+</html>
