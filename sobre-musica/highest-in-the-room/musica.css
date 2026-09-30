@@ -92,11 +92,14 @@ a {
     display: flex;
     flex-direction: column;
     color: var(--branco);
-    margin: 40px;
+    margin: 10%;
 
     width: 60%;
-    max-height: 77%;
+    height: 43%;
+}
 
+.letra-musica p {
+    white-space: pre-line;
 }
 
 .letras span {
