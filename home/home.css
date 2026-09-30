@@ -188,6 +188,7 @@
     align-items: flex-start;
     color: var(--branco);
     background-color: #000;
+    font-size: 0.8em;
 
     
   
@@ -200,3 +201,37 @@
     font-weight: 700;
 }
 
+/* Oculta o excedente da imagem */
+.carrossel {
+  width: 100%;
+  max-width: 2000px; 
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Faixa que agrupa as imagens em linha */
+.imagemCarrossel {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite; /* 20s define a velocidade (menor = mais rápido) */
+}
+
+/* Estilo das imagens */
+.imagemCarrossel img {
+  width: 4000px; /* Deve ter a mesma largura máxima do contêiner */
+  height: auto;
+  object-fit: cover;
+}
+
+/* Definição da animação de movimento contínuo */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move exatamente a largura de uma imagem */
+  }
+}
+
+/** PEGUEI O CARROSSEL DO GOOGLE */
