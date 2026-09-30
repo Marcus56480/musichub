@@ -25,3 +25,5 @@ botoes.forEach(botao => {
         imgAtual.src = imgAtual.src.replace('.svg', '-verde.svg');
     });
 });
+
+//! Feito com ajuda de IA, mas não totalmente feito pela mesma.

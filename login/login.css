@@ -1,8 +1,8 @@
 .conteudo {
-    background-image: url(../imgs/Fundo-Login.svg);
+    background-image: url(../imgs/banner.svg);
     background-size: cover;
     height: 90vh;
-
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,11 +13,9 @@
 .login {
     display: flex;
     flex-direction: column;
-
     background-color: #f1f1f1;
-
     width: 35%;
-
+    
     border-radius: 30px;
 
     padding: 50px 100px;
@@ -32,7 +30,7 @@
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
     gap: 16px;
-    height: 110px;
+    height: 10vh;
     padding: 10px 40px;
     background-color: var(--preto);
 }
@@ -153,8 +151,6 @@ form {
     border-radius: 10px;
 
     background-color: var(--branco);
-
-    padding: 0 20px;
 
     font-size: 1em;
 
@@ -320,21 +316,31 @@ form {
     font-weight: 400;
 }
 
-.lembrar-senha input[type="checkbox"] {
-    height: 30px;
-    width: 30px;
+
+.campo-login .lembrar-senha input[type="checkbox"] {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
     
     border: 1px solid var(--preto);
     border-radius: 5px;
+    background-color: var(--branco);
 
     appearance: none;
+    -webkit-appearance: none;
     cursor: pointer;
+    display: inline-block;
+
+    transition: 300ms;
 }
 
-.lembrar-senha input[type="checkbox"]:checked {
+
+.campo-login .lembrar-senha input[type="checkbox"]:checked {
     background-color: var(--verde-claro);
     border: 1px solid var(--preto);
 }
+
 
 .abaixo-senha {
     display: grid;
@@ -372,12 +378,19 @@ form {
     margin-right: 10px;
 }
 
-/* ========================================================
-    ESTILO DO BOTÃO ATIVO (Mantém Branco, Texto/Borda Verde)
-   ======================================================== */
-
 .categorias-login button.active {
-    background-color: var(--branco) !important;      /* Onde é branco se mantém branco */
-    color: var(--verde-claro) !important;            /* Onde era preto fica verde */
-    border: 1px solid var(--verde-claro) !important; /* A borda também fica verde */
+    background-color: var(--branco) !important;      
+    color: var(--verde-claro) !important;            
+    border: 1px solid var(--verde-claro) !important; 
+}
+
+.caixas input  {
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.ou {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
