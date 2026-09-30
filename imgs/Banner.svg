@@ -2,6 +2,7 @@
 <path d="M0.0065918 0H1486V731H0.0065918V0Z" fill="#066257"/>
 <rect y="86.6848" width="1482.91" height="644.315" fill="url(#paint0_linear_365_737)"/>
 <mask id="mask0_365_737" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="106" y="0" width="1380" height="731">
+<<<<<<< HEAD
 <path d="M1135.15 0.000343323C467.45 191.647 1329.12 708.01 106.524 731H1272.74H1486V0.000343323H1135.15Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_365_737)">
@@ -18,6 +19,24 @@
 </mask>
 <g mask="url(#mask2_365_737)">
 <path d="M1044.64 0.000179291H1486V731H1044.64V0.000179291Z" fill="url(#paint3_linear_365_737)"/>
+=======
+<path d="M1135.15 0.000335693C467.45 191.647 1329.12 708.01 106.524 731H1272.74H1486V0.000335693H1135.15Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_365_737)">
+<path d="M106.524 6.10352e-05H1486V731H106.524V6.10352e-05Z" fill="url(#paint1_linear_365_737)"/>
+</g>
+<mask id="mask1_365_737" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="319" y="0" width="1167" height="731">
+<path d="M1486 0.000160217C818.301 191.647 1542.38 708.01 319.785 731H1486V0.000160217Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_365_737)">
+<path d="M319.786 0.000450134H1542.38V731H319.786V0.000450134Z" fill="url(#paint2_linear_365_737)"/>
+</g>
+<mask id="mask2_365_737" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1044" y="0" width="442" height="731">
+<path d="M1346.73 731H1044.64C1196.8 658.806 1465.34 725.038 1465.34 507.091C1465.34 331.028 1164.6 335.042 1164.6 66.5038C1164.6 43.7866 1167.43 21.5592 1172.85 0.000160217H1486V390.477V731H1346.73Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_365_737)">
+<path d="M1044.64 0.000183105H1486V731H1044.64V0.000183105Z" fill="url(#paint3_linear_365_737)"/>
+>>>>>>> e0f88df64c78ea3d04128d7bda3eed90e7832e38
 </g>
 <defs>
 <linearGradient id="paint0_linear_365_737" x1="741.454" y1="86.6848" x2="741.454" y2="731" gradientUnits="userSpaceOnUse">
