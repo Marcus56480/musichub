@@ -59,9 +59,9 @@ const dados = {
     {
       titulo: 'Seus podcasts',
       itens: [
-        { titulo: 'Podcast XYZ',        sub: 'Novos episódios • quarta',  img: '../imgs/imagens. biblioteca/Carrossel.Vertical.jpg' },
+        { titulo: 'Sofrendo com php',        sub: 'Novos episódios • quarta',  img: '../imgs/imagens. biblioteca/Carrossel.Vertical.jpg' },
         { titulo: 'Flow Podcast',       sub: 'Novos episódios • terça',   img: '../imgs/imagens. biblioteca/Carrossel.Vertical (2).jpg' },
-        { titulo: 'Inteligência Ltda',  sub: 'Novos episódios • sexta',   img: '../imgs/imagens. biblioteca/Carrossel.Vertical (3).jpg' }
+        { titulo: 'Inteligência emocional',  sub: 'Novos episódios • sexta',   img: '../imgs/imagens. biblioteca/Carrossel.Vertical (3).jpg' }
       ]
     }
   ],
@@ -79,7 +79,7 @@ const dados = {
   episodios: [
     { titulo: 'EP 42 — Como aprender a programar', sub: 'Podcast XYZ',   duracao: '48:12',  img: '../imgs/imagens. biblioteca/Carrossel.Vertical.jpg' },
     { titulo: 'EP 41 — Carreira em tecnologia',    sub: 'Podcast XYZ',   duracao: '52:30',  img: '../imgs/imagens. biblioteca/Carrossel.Vertical (2).jpg' },
-    { titulo: 'EP 100 — Especial de aniversário',  sub: 'Flow Podcast',  duracao: '1:20:45', img: '../imgs/imagens. biblioteca/Carrossel.Vertical (3).jpg' }
+    { titulo: 'EP 100 — treinando em casa',  sub: 'Flow Podcast',  duracao: '1:20:45', img: '../imgs/imagens. biblioteca/Carrossel.Vertical (3).jpg' }
   ],
 
   // ===== DOWNLOADS (lista vertical) =====
