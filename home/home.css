@@ -214,12 +214,12 @@
 .imagemCarrossel {
   display: flex;
   width: max-content;
-  animation: scroll 30s linear infinite; /* 20s define a velocidade (menor = mais rápido) */
+  animation: scroll 45s linear infinite; /* 20s define a velocidade (menor = mais rápido) */
 }
 
 /* Estilo das imagens */
 .imagemCarrossel img {
-  width: 4000px; /* Deve ter a mesma largura máxima do contêiner */
+  width: 5500px; /* Deve ter a mesma largura máxima do contêiner */
   height: auto;
   object-fit: cover;
 }
