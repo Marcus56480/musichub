@@ -1,0 +1,396 @@
+.conteudo {
+    background-image: url(../imgs/banner.svg);
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+    gap: 250px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    width: 35%;
+    
+    border-radius: 30px;
+
+    padding: 50px 100px;
+
+    gap: 15px;
+
+
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+    height: 10vh;
+    padding: 10px 40px;
+    background-color: var(--preto);
+}
+
+.cabecalho .navegacao {
+    display: flex;
+    grid-column: 3;
+    justify-self: end;
+    align-items: center;
+    gap: 24px;
+    font-family: "baloo 2";
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.cabecalho .navegacao a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.cabecalho a:hover {
+    color: var(--verde-agua);
+}
+
+.logo {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    width: 226px;
+    max-width: 100%;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cabecalho .botao-menu {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+
+    justify-self: start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+
+    border: none;
+    background: transparent;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.botao-menu span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: currentColor
+}
+
+.cabecalho .botao-menu:hover {
+    color: var(--verde-agua);
+}
+
+.img-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.img-cabecalho img {
+    margin-bottom: 15px;
+}
+
+.img-cabecalho h1 {
+    font-size: 1.5em;
+}
+
+.img-cabecalho p {
+    font-size: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo label {
+    color: var(--preto);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.campo input {
+
+    width: 100%;
+    height: 50px;
+
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+
+    background-color: var(--branco);
+
+    font-size: 1em;
+
+    outline: none;
+}
+
+.campo input::placeholder {
+    color: #00000050;
+    font-style: italic;
+    font-family: 'Baloo 2';
+}
+
+.campo-senha {
+    position: relative;
+}
+
+.botao-olho {
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+    color: #00000050;
+}
+
+.botao-entrar {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 30px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--verde-claro);
+    color: var(--branco);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    transition: transform o.2s;
+}
+
+.botao-entrar:hover {
+    cursor: pointer;
+    background-color: var(--fundo-pagina);
+    transform: translateY(-3px);
+}
+
+.botao-google {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    transition: transform o.2s;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botao-google:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.botao-google img {
+    width: 30px;
+    height: 30px;
+}
+
+.Apresentacao-login {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    width: 35%;
+}
+
+.Apresentacao-login img {
+    width: 90%;
+    height: auto;
+}
+
+.img-cabecalho img {
+    width: 150px;
+    height: auto;
+}
+
+.campo-login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+    height: 450px;
+}
+
+.premium {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--verde-claro);
+    color: var(--branco);
+
+    font-size: 1.2em;
+    font-weight: 400;
+
+    transition: transform o.2s;
+
+}
+
+.premium:hover {
+    cursor: pointer;
+    background-color: var(--fundo-pagina);
+    transform: translateY(-3px);
+}
+
+.premium img {
+    width: 30px;
+    height: 30px;
+}
+
+.campo-login a {
+    color: var(--verde-claro);
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-align: right;
+}
+
+.lembrar-senha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+
+.campo-login .lembrar-senha input[type="checkbox"] {
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    max-width: 30px !important;
+    
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+    background-color: var(--branco);
+
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    display: inline-block;
+
+    transition: 300ms;
+}
+
+
+.campo-login .lembrar-senha input[type="checkbox"]:checked {
+    background-color: var(--verde-claro);
+    border: 1px solid var(--preto);
+}
+
+
+.abaixo-senha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.categorias-login {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.categorias-login button {
+    background-color: var(--branco);
+    color: var(--preto);
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.categorias-login button:hover {
+    background-color: var(--branco);
+    color: var(--verde-claro);
+    transform: translateY(-3px);
+}
+
+.categorias-login button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.categorias-login button.active {
+    background-color: var(--branco) !important;      
+    color: var(--verde-claro) !important;            
+    border: 1px solid var(--verde-claro) !important; 
+}
+
+.caixas input  {
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.ou {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
