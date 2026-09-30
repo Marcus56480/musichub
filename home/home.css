@@ -1,0 +1,237 @@
+.cabecalho {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+    height: 80px;
+    padding: 12px 40px;
+    background-color: var(--preto);
+}
+
+.cabecalho .navegacao {
+    display: flex;
+    grid-column: 3;
+    justify-self: end;
+    align-items: center;
+    gap: 24px;
+    font-family: "baloo 2";
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.cabecalho .navegacao a {
+    color: var(--branco);
+    text-decoration: none;
+        transition: 200ms;
+}
+
+.cabecalho a:hover {
+    color: var(--verde-agua);
+}
+
+.logo {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    width: 226px;
+    max-width: 100%;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cabecalho .botao-menu {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+
+    justify-self: start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+
+    border: none;
+    background: transparent;
+    color: var(--branco);
+    cursor: pointer;
+
+    transition: 250ms;
+}
+
+.botao-menu span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: currentColor
+}
+
+.cabecalho .botao-menu:hover {
+    color: var(--verde-agua);
+}
+
+.bemVindo {
+    padding: 180px 100px;
+    min-height: calc(100vh - 80px);
+    background-image: url(../imgs/Banner.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.bemVindo img {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.bemVindo .texto {
+    padding: 0 25px;
+    font-family: "baloo 2";
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.botao {
+    padding: 15px 50px;
+
+    border-radius: 30px;
+    border: none;
+
+    background-color: var(--verde-claro);
+
+
+    font-family: "baloo 2";
+    font-size: 1.2em;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    transition: 350ms;
+}
+
+.botao a {
+    color: var(--texto);
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: var(--verde-agua);
+}
+
+.botao a:hover {
+    color: var(--preto);
+    
+}
+
+.posicaobotao {
+    padding: 50px 260px;
+}
+
+.apresentacaoSite {
+    min-height: 100vh;
+    background-image: url(../imgs/Fundo_home.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.apresentacao
+{
+    padding: 100px 150px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.textoApresentacao
+{
+    font-family: 'baloo 2';
+    width: 800px;
+}
+
+.textoApresentacao h1
+{
+    font-size: 3.2em;
+    font-weight: 800;
+    text-align: center;
+    color: var(--branco);
+}
+
+.textoApresentacao p
+{
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 650;
+    color: var(--branco);
+}
+
+.rodape 
+{
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--branco);
+    background-color: #000;
+    font-size: 0.8em;
+
+    
+  
+    font-family: 'Baloo 2';
+}
+
+.redes
+{
+    color: var(--verde-claro);
+    font-weight: 700;
+}
+
+/* Oculta o excedente da imagem */
+.carrossel {
+  width: 100%;
+  max-width: 2000px; 
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Faixa que agrupa as imagens em linha */
+.imagemCarrossel {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite; /* 20s define a velocidade (menor = mais rápido) */
+}
+
+/* Estilo das imagens */
+.imagemCarrossel img {
+  width: 4000px; /* Deve ter a mesma largura máxima do contêiner */
+  height: auto;
+  object-fit: cover;
+}
+
+/* Definição da animação de movimento contínuo */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move exatamente a largura de uma imagem */
+  }
+}
+
+/** PEGUEI O CARROSSEL DO GOOGLE */
