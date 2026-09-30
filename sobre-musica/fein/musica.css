@@ -97,6 +97,15 @@ a {
     max-height: 55%;
 }
 
+.letras span {
+    display: flex;
+    background-color: var(--branco);
+    height: 1px;
+    width: 100%;
+
+    margin-bottom: 4%;
+}
+
 .letras p {
     font-size: 1.5em;
     font-weight: 300;
@@ -205,3 +214,5 @@ a {
     display: flex;
     justify-content: flex-end;
 }
+
+/* TODO: Alinhar card de letra com o de informações da música */

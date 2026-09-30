@@ -95,7 +95,32 @@ a {
     margin: 40px;
 
     width: 60%;
+    max-height: 77%;
 
+}
+
+.letras span {
+    display: flex;
+    background-color: var(--branco);
+    height: 1px;
+    width: 100%;
+
+    margin-bottom: 4%;
+}
+
+.letra-musica {
+    display: flex;
+    gap: 4%;
+    overflow-x: auto;
+    width: 100%;
+    max-height: 100%;
+    min-width: 0;
+    padding-bottom: 10px;
+}
+
+.letra-musica::-webkit-scrollbar {
+    width: 5px;
+    color: var(--preto);
 }
 
 .letras p {
@@ -191,3 +216,5 @@ a {
     display: flex;
     justify-content: flex-end;
 }
+
+/* TODO: Alinhar card de letra com o de informações da música */
