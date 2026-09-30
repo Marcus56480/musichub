@@ -1,3 +1,7 @@
+/* ============================================
+   MUSIC HUB — BIBLIOTECA
+   ============================================ */
+
 /* ===== Reset & base ===== */
 * {
   margin: 0;
@@ -63,7 +67,9 @@ body::after {
   50%      { transform: translate(-140px, -100px) scale(1.15); }
 }
 
-/* ===== Layout ===== */
+/* ============================================
+   LAYOUT
+   ============================================ */
 .app {
   display: grid;
   grid-template-columns: 180px 1fr;
@@ -72,7 +78,9 @@ body::after {
   z-index: 1;
 }
 
-/* ===== Sidebar ===== */
+/* ============================================
+   SIDEBAR
+   ============================================ */
 .sidebar {
   background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
@@ -91,17 +99,6 @@ body::after {
 
 .sidebar-logo img {
   width: 60px;
-}
-
-.sidebar-lib {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 13px;
-  gap: 4px;
-  opacity: 0.85;
-  text-align: center;
-  color: #8fa89a;
 }
 
 .sidebar-avatares {
@@ -147,7 +144,9 @@ body::after {
   text-overflow: ellipsis;
 }
 
-/* ===== Conteúdo ===== */
+/* ============================================
+   CONTEÚDO
+   ============================================ */
 .conteudo {
   padding: 24px 32px;
   overflow-x: hidden;
@@ -195,7 +194,9 @@ body::after {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* ===== Filtros ===== */
+/* ============================================
+   FILTROS
+   ============================================ */
 .filtros {
   display: flex;
   gap: 10px;
@@ -229,7 +230,9 @@ body::after {
   font-weight: 700;
 }
 
-/* ===== Seções ===== */
+/* ============================================
+   SEÇÕES
+   ============================================ */
 .secao {
   margin-bottom: 32px;
 }
@@ -257,7 +260,9 @@ body::after {
   color: #1ed760;
 }
 
-/* ===== Carrossel ===== */
+/* ============================================
+   CARROSSEL
+   ============================================ */
 .carrossel {
   position: relative;
   mask-image: linear-gradient(to right, #000 85%, transparent 100%);
@@ -290,7 +295,9 @@ body::after {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* ===== Card ===== */
+/* ============================================
+   CARD
+   ============================================ */
 .card {
   position: relative;
   background: rgba(0, 0, 0, 0.35);
@@ -361,7 +368,9 @@ body::after {
   transform: scale(0.95);
 }
 
-/* ===== Lista vertical ===== */
+/* ============================================
+   LISTA VERTICAL
+   ============================================ */
 .lista {
   list-style: none;
   display: flex;
@@ -454,7 +463,9 @@ body::after {
   transform: scale(1.08);
 }
 
-/* ===== Player fixo ===== */
+/* ============================================
+   PLAYER
+   ============================================ */
 .player {
   position: fixed;
   bottom: 0;
@@ -473,14 +484,12 @@ body::after {
   z-index: 100;
 }
 
-/* Info (capa + texto) */
 .player-info {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-/* Container da capa com barrinhas sobrepostas */
 .player-capa {
   position: relative;
   width: 56px;
@@ -496,7 +505,6 @@ body::after {
   display: block;
 }
 
-/* Barrinhas animadas sobrepostas na capa */
 .tocando {
   position: absolute;
   bottom: 4px;
@@ -529,7 +537,6 @@ body::after {
   50%      { height: 12px; }
 }
 
-/* Texto do player */
 .player-info strong {
   display: block;
   font-size: 13px;
@@ -540,7 +547,6 @@ body::after {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Centro (controles + progresso) */
 .player-centro {
   display: flex;
   flex-direction: column;
@@ -604,7 +610,6 @@ body::after {
   height: 4px;
 }
 
-/* Volume */
 .player-volume {
   display: flex;
   align-items: center;
@@ -619,10 +624,325 @@ body::after {
   accent-color: #1ed760;
 }
 
-/* ===== Estado vazio ===== */
+/* ============================================
+   ESTADO VAZIO
+   ============================================ */
 .vazio {
   text-align: center;
   padding: 60px 20px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
+}
+
+/* ============================================
+   RESPONSIVO — TABLET (até 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+  .app {
+    grid-template-columns: 125px 1fr;
+  }
+
+  .sidebar-avatares img {
+    width: 60px;
+    height: 70px;
+  }
+
+  .carrossel {
+    grid-auto-columns: 220px;
+  }
+
+  .conteudo {
+    padding: 20px 24px;
+  }
+
+  .player {
+    grid-template-columns: 200px 1fr 200px;
+    gap: 16px;
+    padding: 0 16px;
+  }
+}
+
+/* ============================================
+   RESPONSIVO — MOBILE (até 768px)
+   ============================================ */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 160px;
+  }
+
+  .app {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  /* Sidebar vira barra horizontal */
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    gap: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 50;
+    scrollbar-width: none;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sidebar-logo img {
+    width: 40px;
+    flex-shrink: 0;
+  }
+
+  .sidebar-avatares {
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+  }
+
+  .sidebar-avatares li {
+    flex-shrink: 0;
+  }
+
+  .sidebar-avatares img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  .sidebar-avatares span {
+    display: none;
+  }
+
+  /* Conteúdo */
+  .conteudo {
+    padding: 16px;
+  }
+
+  .busca {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  .pagina-header h1 {
+    font-size: 24px;
+  }
+
+  .pagina-header p {
+    font-size: 12px;
+  }
+
+  /* Filtros com fade lateral */
+  .filtros {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+    mask-image: linear-gradient(to right, transparent 0%, #000 5%, #000 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 5%, #000 95%, transparent 100%);
+  }
+
+  .filtros::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filtro {
+    flex-shrink: 0;
+    padding: 7px 14px;
+    font-size: 10px;
+  }
+
+  /* Seções */
+  .secao {
+    margin-bottom: 24px;
+  }
+
+  .secao-header h2 {
+    font-size: 16px;
+  }
+
+  .secao-header a {
+    font-size: 11px;
+  }
+
+  /* Carrossel */
+  .carrossel {
+    grid-auto-columns: 140px;
+    gap: 8px;
+    mask-image: none;
+    -webkit-mask-image: none;
+    scrollbar-width: none;
+  }
+
+  .carrossel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .card h3 {
+    font-size: 11px;
+  }
+
+  .card p {
+    font-size: 9px;
+  }
+
+  .card .play {
+    bottom: 48px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    font-size: 11px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Lista vertical */
+  .item-lista {
+    grid-template-columns: 48px 1fr auto;
+    gap: 12px;
+    padding: 8px 12px;
+  }
+
+  .item-lista img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .item-lista .info h3 {
+    font-size: 13px;
+  }
+
+  .item-lista .info p {
+    font-size: 11px;
+  }
+
+  .item-lista .duracao,
+  .item-lista .icone-baixado {
+    display: none;
+  }
+
+  .play-lista {
+    opacity: 1;
+    background: #1ed760;
+    color: #000;
+  }
+
+  /* Player compacto */
+  .player {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: auto;
+    padding: 10px 16px;
+    gap: 6px;
+  }
+
+  .player-info {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .player-capa {
+    width: 40px;
+    height: 40px;
+  }
+
+  .player-info strong {
+    font-size: 12px;
+  }
+
+  .player-info span {
+    font-size: 10px;
+  }
+
+  .player-centro {
+    max-width: 100%;
+  }
+
+  .player-controles {
+    gap: 16px;
+  }
+
+  .player-controles .play-principal {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .player-progresso {
+    font-size: 10px;
+    gap: 6px;
+  }
+
+  .player-volume {
+    display: none;
+  }
+}
+
+/* ============================================
+   RESPONSIVO — MOBILE PEQUENO (até 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .conteudo {
+    padding: 12px;
+  }
+
+  .pagina-header h1 {
+    font-size: 20px;
+  }
+
+  .pagina-header p {
+    font-size: 11px;
+  }
+
+  .carrossel {
+    grid-auto-columns: 130px;
+  }
+
+  .card {
+    padding: 6px;
+  }
+
+  .card .play {
+    bottom: 44px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .item-lista {
+    grid-template-columns: 42px 1fr auto;
+    gap: 10px;
+    padding: 6px 10px;
+  }
+
+  .item-lista img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .sidebar {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .sidebar-logo img {
+    width: 32px;
+  }
+
+  .sidebar-avatares img {
+    width: 40px;
+    height: 40px;
+  }
 }
