@@ -1,21 +1,21 @@
 /* ===== Reset básico ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(135deg, #0d5c3f 0%, #0a4a32 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-
-    background: url('../../imgs/fundo-cadastro.svg') no-repeat center center;
-    background-size: cover;
+  font-family: 'Poppins', Arial, sans-serif;
+  background:
+    url('../../imgs/fundo-cadastro.svg') no-repeat center center / cover,
+    linear-gradient(135deg, #0d5c3f 0%, #0a4a32 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 /* ===== Layout principal ===== */
@@ -23,13 +23,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: clamp(40px, 6vw, 80px);
   width: 100%;
-  max-width: 1200px;        
+  max-width: 1200px;
   min-height: 100vh;
-  margin: 0 auto;        
-  padding: 40px 24px;      
-  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 40px 24px;
   position: relative;
   z-index: 1;
 }
@@ -40,91 +39,94 @@ body {
   border-radius: 16px;
   padding: 32px 28px;
   width: 100%;
-  max-width: 360px;    
-  flex-shrink: 0;          
+  max-width: 360px;
+  flex-shrink: 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
-
 .logo-topo {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .logo-topo img {
-    width: 100px;
+  width: 56px;
 }
 
 .form-card h1 {
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #1a1a1a;
-    margin-bottom: 28px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  margin-bottom: 24px;
 }
 
 /* ===== Formulário ===== */
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 form label {
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #333;
-    margin-bottom: 6px;
-    letter-spacing: 0.5px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
 }
 
 form input {
-    padding: 18px 16px;
-    border: 1.5px solid #333;
-    border-radius: 26px;
-    font-size: 14px;
-    margin-bottom: 16px;
-    outline: none;
-    transition: border-color 0.2s;
+  padding: 10px 14px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
 }
 
 form input:focus {
-    border-color: #4CAF7D;
+  border-color: #1ed760;
+  box-shadow: 0 0 0 3px rgba(30, 215, 96, 0.15);
 }
 
 form input::placeholder {
-    color: #999;
+  color: #aaa;
+  font-size: 12px;
 }
 
 /* ===== Botão ===== */
 form button {
-    background: linear-gradient(135deg, #5fd08a, #3aab6b);
-    color: #fff;
-    border: none;
-    border-radius: 24px;
-    padding: 14px;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin-top: 8px;
-    transition: transform 0.15s, box-shadow 0.15s;
+  background: linear-gradient(135deg, #5fd08a, #3aab6b);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: transform 0.15s, box-shadow 0.15s;
+  font-family: inherit;
 }
 
 form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(76, 175, 125, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(76, 175, 125, 0.4);
 }
 
 form button:active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
 /* ===== Lado direito ===== */
 .apresentacao {
   color: #fff;
-  max-width: 420px;         
+  max-width: 420px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -132,16 +134,15 @@ form button:active {
 }
 
 .logo-lateral {
-  width: 300px;             
-  margin: 0 0 40px 0;
+  width: 200px;
+  margin: 0 0 32px 0;
 }
 
 .apresentacao h2 {
-  font-size: 36px;          
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 16px;
-  white-space: nowrap;     
 }
 
 .apresentacao p {
@@ -153,24 +154,57 @@ form button:active {
 
 /* ===== Responsivo ===== */
 @media (max-width: 900px) {
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 60px;
-        padding: 0 5%;
-        min-height: 100vh;
-    }
+  .container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 20px;
+  }
 
-    .apresentacao {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .apresentacao {
+    align-items: center;
+    text-align: center;
+  }
 
-    .logo-lateral {
-        width: 1000px;
-        margin: 0 0 40px 0;
-        align-self: flex-start;
-    }
+  .logo-lateral {
+    width: 160px;
+    margin: 0 0 20px 0;
+  }
+
+  .apresentacao h2 {
+    font-size: 28px;
+  }
+}
+
+/* ===== Feedback visual dos inputs ===== */
+input {
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Input válido */
+input.valido {
+  border-color: #4CAF7D !important;
+  box-shadow: 0 0 0 2px rgba(76, 175, 125, 0.15);
+}
+
+/* Input inválido */
+input.invalido {
+  border-color: #e74c3c !important;
+  box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.15);
+}
+
+/* Botão desabilitado */
+button[type="submit"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Botão pronto (todos válidos) */
+button[type="submit"].pronto {
+  animation: pulseVerde 2s ease-in-out infinite;
+}
+
+@keyframes pulseVerde {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(76, 175, 125, 0.4); }
+  50%      { box-shadow: 0 0 0 8px rgba(76, 175, 125, 0); }
 }

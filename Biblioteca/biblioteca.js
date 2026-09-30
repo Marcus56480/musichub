@@ -141,7 +141,7 @@ function renderizarCategoria(categoria) {
     containerConteudo.innerHTML = html;
   }
 
-  // Re-bindar eventos após injetar HTML
+  
   bindarEventos();
 }
 
@@ -348,5 +348,34 @@ volumeSlider.addEventListener('input', (e) => {
 // ============================================
 
 // Renderiza a categoria inicial
-renderizarCategoria('playlists');
-const itensHTML = conteudo.map(i => criarItemLista(i, mostrarBaixado, categoria)).join('');
+function renderizarCategoria(categoria) {
+  const conteudo = dados[categoria];
+
+  if (!conteudo || conteudo.length === 0) {
+    containerConteudo.innerHTML = `<p class="vazio">Nada por aqui ainda.</p>`;
+    return;
+  }
+
+  const ehLista = CATEGORIAS_LISTA.includes(categoria);
+
+  if (ehLista) {
+    // Lista vertical direta
+    const mostrarBaixado = categoria === 'downloads';
+    const itensHTML = conteudo.map(i => criarItemLista(i, mostrarBaixado, categoria)).join('');   // ✅ com categoria
+
+    containerConteudo.innerHTML = `
+      <section class="secao">
+        <header class="secao-header">
+          <h2>${nomeBonito(categoria)}</h2>
+        </header>
+        <ul class="lista">${itensHTML}</ul>
+      </section>
+    `;
+  } else {
+    // Carrossel com múltiplas seções
+    const html = conteudo.map(criarSecaoCarrossel).join('');
+    containerConteudo.innerHTML = html;
+  }
+
+  bindarEventos();
+}
