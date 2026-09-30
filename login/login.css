@@ -371,25 +371,13 @@ form {
     height: 20px;
     margin-right: 10px;
 }
-/*! JAVASCRIPT
-.ouvinte button.active {
-    background-color: var(--verde-claro);
-    color: var(--branco);
-    border: 1px solid var(--verde-claro);
-    background-image: url(../imgs/Fone-verde.svg);
-}
 
-.artista button.active {
-    background-color: var(--verde-claro);
-    color: var(--branco);
-    border: 1px solid var(--verde-claro);
-    background-image: url(../imgs/Microfone-verde.svg);
-}
+/* ========================================================
+    ESTILO DO BOTÃO ATIVO (Mantém Branco, Texto/Borda Verde)
+   ======================================================== */
 
-.administrador button.active {
-    background-color: var(--verde-claro);
-    color: var(--branco);
-    border: 1px solid var(--verde-claro);
-    background-image: url(../imgs/ADM-verde.svg);
+.categorias-login button.active {
+    background-color: var(--branco) !important;      /* Onde é branco se mantém branco */
+    color: var(--verde-claro) !important;            /* Onde era preto fica verde */
+    border: 1px solid var(--verde-claro) !important; /* A borda também fica verde */
 }
-*/
